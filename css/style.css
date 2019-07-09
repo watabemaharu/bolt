@@ -138,24 +138,24 @@ article {
   display: flex;
 }
 
-.article-bottom {
+.article-bottom-inner {
   margin-top: 90px;
-  display: inline-block;
+  display: flex;
   text-align: center;
 }
 
-.article-text-box{
-  width: 60%;
-  display: flex;
+.article-bottom {
+  text-align: center;
+  display: inline-block;
 }
 
-.email-box {
-  display: flex;
+.article-text-box{
+  width: 530px;
 }
 
 .article-text {
   line-height: 28px;
-  
+ 
 }
 
 .email {
@@ -167,7 +167,7 @@ article {
   display: inline-block;
   margin-left: 90px;
   text-decoration:none;
-  
+  display: inline-block;
 }
 
 figure {
