@@ -1,12 +1,21 @@
 @charset "UTF-8";
 
-header {
+body {
+  background-color: 	#f2f2f2;
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
   background-color: #fff;
   position: fixed;
   width: 100%;
   justify-content: space-between;
   top: 0;
   z-index: 1;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
 }
 
 .inner {
@@ -17,18 +26,21 @@ header {
 .header-inner {
   padding-top: 15px;
   padding-bottom: 15px;
+  height: 36px;
 }
 
-body {
-  background-color: 	#f2f2f2;
+.bolt-box {
+  float: left;
+}
+
+.contact-box {
+  float: right;
 }
 
 .fa-bolt {
   font-size: 2.3em;
   padding-right: 50%;
   padding-left: 20%;
-  float: left;
- 
 }
 
 .contact {
@@ -39,6 +51,7 @@ body {
   padding: 12px 14px 12px 14px;
   display: inline-block;
   text-decoration:none;
+  transition: all 0.3s ;
 }
 
 .contact:hover, .email:hover {
@@ -47,8 +60,7 @@ body {
 }
 
 .main-inner {
-  margin-top: 250px;
-  margin-bottom: 250px;
+  padding: 316px 0px 250px 0px;
 }
 
 .main-title {
@@ -90,12 +102,11 @@ section {
 
 .section-title {
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
 }
 
 .section-text {
   font-size: 20px;
-  padding-top: 35px;
+  margin-top: 35px;
   line-height: 28px;
 }
 
@@ -106,21 +117,22 @@ article {
 
 .article-inner {
   margin-top: 60px;
-  padding-bottom: 70px;
 }
 
 .article-title {
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
-.img-top {
+.img {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .article-img {
   opacity: 0.7;
+  transition: all 0.3s ;
+  margin: 80px 0px 0px 100px;
 }
 
 .article-img:hover  {
@@ -128,18 +140,19 @@ article {
   opacity: 1;
 }
 
-.middle {
-  margin-left: 100px;
-  margin-right: 100px;
+.article-img:nth-child(-n+3) {
+  margin-top: 0px;
 }
 
-.img-bottom {
-  padding-top: 80px;
-  display: flex;
+.article-img:nth-child(1) {
+  margin-left: 0px;
+}
+
+.article-img:nth-child(4) {
+  margin-left: 0px;
 }
 
 .article-bottom-inner {
-  margin-top: 90px;
   display: flex;
   text-align: center;
 }
@@ -147,6 +160,7 @@ article {
 .article-bottom {
   text-align: center;
   display: inline-block;
+  padding-top: 90px
 }
 
 .article-text-box{
@@ -155,7 +169,6 @@ article {
 
 .article-text {
   line-height: 28px;
- 
 }
 
 .email {
@@ -168,25 +181,27 @@ article {
   margin-left: 90px;
   text-decoration:none;
   display: inline-block;
+  transition: all 0.3s ;
 }
 
-figure {
+.ourskills {
   background-color: #4e4e4e;
 }
 
-.figure-inner {
+.ourskills-inner {
+  margin-top: 70px;
   padding-bottom: 100px;
   color: #fff;
   text-align: center;
 }
 
-.figure-title {
+.ourskills-title {
   font-size: 24px;
   padding-top: 70px;
-  padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 
-.ourskills {
+.ourskills-inbox {
   display:flex;
 }
 
@@ -215,8 +230,8 @@ nav {
 }
 
 .nav-inner {
-  margin-top: 200px;
-  margin-bottom:200px; 
+  padding-top: 200px;
+  padding-bottom:200px; 
 }
 
 .nav-inner-box {
